@@ -9,7 +9,6 @@ def get_soup(url):
     page = requests.get(url)
     soup = BeautifulSoup(page.text, 'html.parser')
 
-    
     print "type: ", type(soup)
     return soup
 
@@ -23,23 +22,22 @@ def get_playable_podcast(soup):
     subjects = []
 
     for content in soup.find_all('item'):
-        
         try:        
             link = content.find('enclosure')
             link = link.get('url')
             print "\n\nLink: ", link
 
-            title = content.find('itunes:title')
+            title = content.find('title')
             title = title.get_text()
 
-            desc = content.find('itunes:subtitle')
-            desc = desc.get_text()
+#            desc = content.find('itunes:subtitle')
+#            desc = desc.get_text()
 
-            thumbnail = content.find('itunes:image')
-            thumbnail = title.get_text('href')
+            thumbnail = content.find('image')
+            thumbnail = title.get_text('url')
 
-            episode = content.find('itunes:episode')
-            episode = title.get_text()
+#            episode = content.find('itunes:episode')
+#            episode = title.get_text()
 
         except AttributeError:
             continue
@@ -47,9 +45,9 @@ def get_playable_podcast(soup):
         item = {
                 'url': link,
                 'title': title,
-                'desc': desc,
+#                'desc': desc,
                 'thumbnail': thumbnail,
-                'episode': episode,
+#                'episode': episode,
         }
         
         subjects.append(item) 
@@ -82,23 +80,22 @@ def get_playable_podcast1(soup):
     subjects = []
 
     for content in soup.find_all('item', limit=5):
-        
         try:        
             link = content.find('enclosure')
             link = link.get('url')
             print "\n\nLink: ", link
 
-            title = content.find('itunes:title')
+            title = content.find('title')
             title = title.get_text()
 
-            desc = content.find('itunes:subtitle')
-            desc = desc.get_text()
+#            desc = content.find('itunes:subtitle')
+#            desc = desc.get_text()
 
-            thumbnail = content.find('itunes:image')
-            thumbnail = title.get_text('href')
+            thumbnail = content.find('image')
+            thumbnail = title.get_text('url')
 
-            episode = content.find('itunes:episode')
-            episode = title.get_text()
+#            episode = content.find('itunes:episode')
+#            episode = title.get_text()
 
         except AttributeError:
             continue
@@ -106,13 +103,12 @@ def get_playable_podcast1(soup):
         item = {
                 'url': link,
                 'title': title,
-                'desc': desc,
+#                'desc': desc,
                 'thumbnail': thumbnail,
-                'episode': episode,
+#                'episode': episode,
         }
         
         subjects.append(item) 
-    
     return subjects
 
 

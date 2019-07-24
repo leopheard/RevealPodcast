@@ -15,11 +15,11 @@ def main_menu():
    {
             'label': plugin.get_string(30001), 
             'path': plugin.url_for('all_episodes1'),
-            'thumbnail': "https://f.prxu.org/149/images/e0451995-43d7-4713-ba22-610e7f182cb6/reveal300px.png"},
+            'thumbnail': "/home/osmc/.kodi/addons/plugin.audio.NPRpodcasts/resources/media/reveal300px.png"},
         {
             'label': plugin.get_string(30000), 
             'path': plugin.url_for('all_episodes'),
-            'thumbnail': "https://www.revealnews.org/wp-content/uploads/2017/11/reveal-square-logo-black-on-transparent.png"},
+            'thumbnail': "/home/osmc/.kodi/addons/plugin.audio.NPRpodcasts/resources/media/reveal300px.png"},
     ]
 
     return items
