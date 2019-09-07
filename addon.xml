@@ -22,8 +22,8 @@
     <website>https://www.revealnews.org/</website>
     <audio_guide></audio_guide>
         	<assets>
-			<icon>resources/media/icon.png</icon>
-			<fanart>resources/media/fanart.png</fanart>
+			<icon>resources/media/screenshot1.jpg</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
 			<screenshot>resources/media/screenshot1.jpg</screenshot>
 			<screenshot>resources/media/screenshot2.png</screenshot>
 			<screenshot>resources/media/screenshot3.jpg</screenshot>
