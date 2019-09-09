@@ -5,4 +5,4 @@ Reveal Podcast<br>
 
 ^^^ To install this addon, either use the <a href="https://www.tvaddons.co/github-browser-kodi/">Kodi Github installer</a> addon or save the .zip file downloaded from the 'clone or download' button to somewhere the Kodi can access (e.g. network drive or USB stick). Then on the Kodi, go to addons > install from zip file.<br>
 
-<a href="https://www.revealnews.org/"><img src="https://www.revealnews.org/wp-content/themes/reveal2015/static/images/logo/reveal/reveal-logo-white-on-transparent.png"><a href="http://www.kodi.tv"><img src="https://kodi.tv/sites/default/files/page/field_image/about--devices.jpg">
+<img src="https://www.revealnews.org/wp-content/themes/reveal2015/static/images/logo/reveal/reveal-logo-white-on-transparent.png"><a href="http://www.kodi.tv"><img src="https://kodi.tv/sites/default/files/page/field_image/about--devices.jpg">
