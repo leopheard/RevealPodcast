@@ -26,21 +26,21 @@ def main_menu():
     return items
 
 @plugin.route('/episodes/')
-def all_episodes():
+def episodes():
     soup1 = mainaddon.get_soup1(URL1)
     playable_podcast = mainaddon.get_playable_podcast(soup1)
     items = mainaddon.compile_playable_podcast(playable_podcast)
     return items
 
 @plugin.route('/episodes1/')
-def all_episodes1():
+def episodes1():
     soup1 = mainaddon.get_soup1(URL1)
     playable_podcast1 = mainaddon.get_playable_podcast1(soup1)
     items = mainaddon.compile_playable_podcast1(playable_podcast1)
     return items
 
 @plugin.route('/episodes2/')
-def all_episodes2():
+def episodes2():
     soup2 = mainaddon.get_soup2(URL2)
     playable_podcast2 = mainaddon.get_playable_podcast2(soup2)
     items = mainaddon.compile_playable_podcast2(playable_podcast2)
