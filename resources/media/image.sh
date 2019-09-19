@@ -12,19 +12,11 @@ convert -resize 512x512 logo.png icon.jpg
 
 convert -resize 512x512 1.gif 1.jpg
 
-convert -resize 512x512 1.png 1.png
-
-convert -resize 512x512 1.jpeg 1.jpg
-
-convert -resize 512x512 1.jpg 1.jpg
-
 convert -resize 512x512 1.png 1.jpg
 
 convert -resize 512x512 1.jpeg 1.jpg
 
 convert -resize 512x512 1.jpg 1.jpg
-
-convert -resize 512x512 1.png 1.png
 
 convert -resize 512x512 1.jpeg 1.jpg
 
