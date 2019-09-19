@@ -7,9 +7,6 @@ plugin = Plugin()
 URL1 = "http://feeds.revealradio.org/revealpodcast"
 URL2 = "https://www.revealnews.org/feed/"
 
-media:thumbnail
-url
-
 @plugin.route('/')
 def main_menu():
     items = [

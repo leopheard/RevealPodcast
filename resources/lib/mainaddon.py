@@ -86,7 +86,7 @@ def get_playable_podcast2(soup2):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
-            thumbnail = content.find('media')
+            thumbnail = content.find('media:thumbnail')
             thumbnail = title.get_text('url')
         except AttributeError:
             continue
