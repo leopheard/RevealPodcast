@@ -4,8 +4,8 @@ from resources.lib import mainaddon
 plugin = Plugin()
 
 # base url for fetching podcasts 
-URL1 = "http://feeds.revealradio.org/revealpodcast"
-URL2 = "https://www.revealnews.org/feed/"
+url1 = "http://feeds.revealradio.org/revealpodcast"
+url2 = "https://www.revealnews.org/feed/"
 
 @plugin.route('/')
 def main_menu():
@@ -27,21 +27,21 @@ def main_menu():
 
 @plugin.route('/episodes/')
 def episodes():
-    soup1 = mainaddon.get_soup1(URL1)
+    soup1 = mainaddon.get_soup1(url1)
     playable_podcast = mainaddon.get_playable_podcast(soup1)
     items = mainaddon.compile_playable_podcast(playable_podcast)
     return items
 
 @plugin.route('/episodes1/')
 def episodes1():
-    soup1 = mainaddon.get_soup1(URL1)
+    soup1 = mainaddon.get_soup1(url1)
     playable_podcast1 = mainaddon.get_playable_podcast1(soup1)
     items = mainaddon.compile_playable_podcast1(playable_podcast1)
     return items
 
 @plugin.route('/episodes2/')
 def episodes2():
-    soup2 = mainaddon.get_soup2(URL2)
+    soup2 = mainaddon.get_soup2(url2)
     playable_podcast2 = mainaddon.get_playable_podcast2(soup2)
     items = mainaddon.compile_playable_podcast2(playable_podcast2)
     return items
