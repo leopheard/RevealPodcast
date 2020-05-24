@@ -20,11 +20,10 @@
     <email>leopheard@gmail.com</email>
     <source>https://github.com/leopheard/Revealpodcast</source>
     <website>https://www.revealnews.org/</website>
-    <audio_guide></audio_guide>
         	<assets>
 			<icon>resources/media/icon.jpg</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
-			<screenshot>resources/media/icon.jpg</screenshot>
+			<screenshot>resources/media/1.jpg</screenshot>
 			<screenshot>resources/media/2.jpg</screenshot>
 			<screenshot>resources/media/3.jpg</screenshot>
 		</assets>
