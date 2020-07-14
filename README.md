@@ -1,5 +1,3 @@
-<a href="www.revealnews.org/">Reveal</a><br>
-
 <a href="www.kodi.tv">KODI</a> / XBMC / Firestick audio addon for the <a href="https://www.revealnews.org/">Reveal podcast</a>.<br>
 
 <img src="https://www.revealnews.org/wp-content/themes/reveal2015/static/images/logo/reveal/reveal-logo-white-on-transparent.png"><br>

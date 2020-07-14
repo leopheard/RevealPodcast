@@ -9,6 +9,7 @@
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
     <provides>audio</provides>
+    <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
@@ -18,14 +19,15 @@
     <license>The MIT License (MIT)</license>
     <forum></forum>
     <email>leopheard@gmail.com</email>
-    <source>https://github.com/leopheard/Revealpodcast</source>
+    <source>https://github.com/leopheard/RevealPodcast</source>
     <website>https://www.revealnews.org/</website>
         	<assets>
-			<icon>resources/media/icon.jpg</icon>
+			<icon>resources/media/1.jpg</icon>
 			<fanart>resources/media/fanart.jpg</fanart>
 			<screenshot>resources/media/1.jpg</screenshot>
 			<screenshot>resources/media/2.jpg</screenshot>
 			<screenshot>resources/media/3.jpg</screenshot>
+			<screenshot>resources/media/4.jpg</screenshot>
 		</assets>
   </extension>
 </addon>
