@@ -7,13 +7,11 @@ def get_soup1(url1):
     soup1 = BeautifulSoup(page.text, 'html.parser')
     print("type: ", type(soup1))
     return soup1
-get_soup1("http://feeds.revealradio.org/revealpodcast")
 def get_soup2(url2):
     page = requests.get(url2)
     soup2 = BeautifulSoup(page.text, 'html.parser')
     print("type: ", type(soup2))
     return soup2
-get_soup2("https://www.revealnews.org/feed/")
 
 def get_playable_podcast(soup1):
     subjects = []
@@ -48,7 +46,7 @@ def compile_playable_podcast(playable_podcast):
 
 def get_playable_podcast1(soup1):
     subjects = []
-    for content in soup1.find_all('item', limit=14):
+    for content in soup1.find_all('item', limit=18):
         try:
             link = content.find('enclosure')
             link = link.get('url')

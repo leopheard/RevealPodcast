@@ -2,8 +2,6 @@ from xbmcswift2 import Plugin, xbmcgui
 from resources.lib import mainaddon
 
 plugin = Plugin()
-
-# base url for fetching podcasts 
 url1 = "http://feeds.revealradio.org/revealpodcast"
 url2 = "https://www.revealnews.org/feed/"
 
@@ -13,15 +11,15 @@ def main_menu():
    {
             'label': plugin.get_string(30001), 
             'path': plugin.url_for('episodes1'),
-            'thumbnail': "https://www.revealnews.org/wp-content/uploads/2017/11/reveal-square-logo-black-on-transparent-150x150.png"},
+            'thumbnail': "https://github.com/leopheard/RevealPodcast/blob/master/resources/media/1.jpg?raw=true"},
         {
             'label': plugin.get_string(30000), 
             'path': plugin.url_for('episodes'),
-            'thumbnail': "https://www.revealnews.org/wp-content/uploads/2017/11/reveal-square-logo-black-on-transparent-150x150.png"},
+            'thumbnail': "https://github.com/leopheard/RevealPodcast/blob/master/resources/media/1.jpg?raw=true"},
    {
             'label': plugin.get_string(30002), 
             'path': plugin.url_for('episodes2'),
-            'thumbnail': "https://www.revealnews.org/wp-content/uploads/2017/11/reveal-square-logo-black-on-transparent-150x150.png"},
+            'thumbnail': "https://github.com/leopheard/RevealPodcast/blob/master/resources/media/5.jpg?raw=true"},
     ]
     return items
 
