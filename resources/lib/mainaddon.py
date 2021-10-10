@@ -22,8 +22,8 @@ def get_playable_podcast(soup1):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
-            thumbnail = content.find('image')
-            thumbnail = title.get_text('url')
+            thumbnail = content.find('itunes:image')
+            thumbnail = title.get_text('href')
         except AttributeError:
             continue
         item = {
@@ -46,21 +46,21 @@ def compile_playable_podcast(playable_podcast):
 
 def get_playable_podcast1(soup1):
     subjects = []
-    for content in soup1.find_all('item', limit=18):
+    for content in soup1.find_all('item', limit=20):
         try:
             link = content.find('enclosure')
             link = link.get('url')
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
-            thumbnail = content.find('image')
-            thumbnail = title.get_text('url')
+#            thumbnail = content.find('itunes:image')
+#            thumbnail = title.get_text('href')
         except AttributeError:
             continue
         item = {
                 'url': link,
                 'title': title,
-                'thumbnail': thumbnail,
+                'thumbnail': "https://f.prxu.org/149/images/331c89b7-9e54-45a2-9b9e-f3ded90ef41e/reveal1400s.jpg",
         }
         subjects.append(item) 
     return subjects
